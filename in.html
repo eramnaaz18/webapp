@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<style>
+	form{
+		border: 3px solid #f1f1f1;
+		}
+	input[type=text]
+	{
+		width: 40%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border:1px solid #ccc;
+		box-sizing: border-box;
+	}
+	button{
+		background-color: #4CAF50;
+		color: white;
+		padding: 14px 20px;
+		margin: 8px 0;
+		border: none;
+		cursor: pointer;
+		width: 10%;
+		}
+	button:hover{
+		opacity: 0.8;
+		}
+	.imgcontainer{
+		text-align: center;
+		margin: 24px 0 12px 0;
+		}
+	img.avatar{
+		width:20%;
+		border-radius: 25%;
+		}
+	.container{
+		padding: 16px;
+		}
+	</style>
+<body>
+<center> <h4>Enter your linux commands below</h4>
+<form action="http://192.168.0.104/cgi-bin/iiec.py">
+<div class="imgcontainer">
+<img src="https://1000logos.net/wp-content/uploads/2017/03/LINUX-LOGO-453x500.png" alt="Avatar" class="avatar">
+</div>
+<div class="container">
+<label><input name='ord' type="cmd" placeholder="Linux commands">
+</br><button type="Submit">Execute</button>
+</div>
+</form>
+</center>
+</body>
+</html>
