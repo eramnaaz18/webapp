@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Information System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <fieldset>
+        <legend>Employee's Information System Version 1.0</legend>
+        <div class="flex-container">
+           
+        <div class="flex-child">
+        <form onsubmit="event.preventDefault();" id="emp-form">
+        <table>
+            <tr>
+                <td>
+                    <label for="id">Employee Number</label>
+                </td>
+                <td>
+                    <input type="number" id="emp_id" required>
+                </td>
+
+                <tr>
+                    <td>
+                        <label for="name">Employee Name</label>
+                    </td>
+                    <td>
+                        <input type="text" id="emp_name" required>
+                    </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="city">City Address</label>
+                </td>
+                <td>
+                    <input type="text" id="emp_city" required>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <label for="dob">Date of Birth</label>
+                </td>
+                <td>
+                    <input type="date" id="emp_dob" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="tele">Telephone Number</label>
+                </td>
+                <td>
+                    <input type="tel" id="emp_tel" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="dept">Department</label>
+                </td>
+                <td>
+                    <input type="text" id="emp_dept" required>
+                </td>
+            </tr>
+        </table>
+        </form>
+    </div>
+    <div class="flex-child">
+        <div class="container">
+        <button type="submit" name="submit" class="registerbtn" id="add" onclick="addEmployee()">ADD</button>
+        <button id="delete" onclick="deleteEmployee()">DELETE</button>
+        <button id="update" onclick="updateEmployee()">UPDATE</button>
+        <button id="search" onclick="searchEmployee()">SEARCH</button>
+        <button id="about" onclick="aboutEmployee()">ABOUT</button>
+        <button id="quit">QUIT</button>
+
+    </div>
+    </div>
+    </div>
+    <br>
+    <div class="row">
+        <button id="first">Move First</button>
+        <button id="next">Move Next</button>
+        <button id="prev">Move Previous</button>
+        <button id="last">Move Last</button>
+        </div>
+   
+       </fieldset>
+       <br><br>
+
+    <div class="output">
+        <table class="u-full-width" id="empTable">
+            <thead>
+                <tr>
+                    <th>Emp Id</th>
+                    <th>Emp Name</th>
+                    <th>Emp City</th>
+                    <th>Emp DOB</th>
+                    <th>Emp Telephone</th>
+                    <th>Emp Department</th>
+                </tr>
+            </thead>
+            
+            <tbody id="employee-list">
+                
+            </tbody>
+        </table>
+    </div>
+  <script src="app.js"></script>
+</body>
+</html>
